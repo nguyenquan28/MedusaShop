@@ -1,0 +1,265 @@
+i {
+  color: #b2b2b2;
+}
+/* ------------------- Header ----------------- */
+
+.mr-sm-2 {
+  border-color: white;
+  border-radius: 0mm !important;
+  border: none !important;
+  box-shadow: 0 1px 0 0 #4285f4 !important;
+}
+
+.mr-sm-2:hover {
+  border-bottom: 1px solid #4285f4 !important;
+  box-shadow: 0 1px 0 0 #4285f4 !important;
+}
+
+.bg-black {
+  background: black !important;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.actives a {
+  color: #3cafe6 !important;
+}
+
+.top-left p {
+  margin-bottom: 0;
+  margin-left: 2em;
+  font-size: 14px;
+  line-height: 3;
+  color: #b2b2b2;
+}
+
+.top-right ul {
+  list-style-type: none;
+}
+
+.top-right .nav-item {
+  float: left;
+  margin: 0;
+}
+
+.nav-item:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.nav-link {
+  margin-left: 0.5em;
+  color: black !important;
+}
+
+.navbar img {
+  width: 10em;
+}
+
+.iconLogout {
+  display: none;
+}
+
+/* -------------- Slide show -------------- */
+
+.carousel-inner img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  text-align: left !important;
+  top: 35%;
+  right: 50% !important;
+  color: #5d3333 !important;
+}
+
+.carousel-caption p {
+  font-size: 28px;
+  color: #333;
+  font-family: Lobster;
+}
+
+.carousel-caption h1 {
+  font-size: 60px;
+  font-family: PlayfairDisplay-Bold;
+  text-transform: uppercase;
+}
+
+.trust-icon-item img {
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+/* ------------- common ---------------- */
+
+.common {
+  width: 190px;
+  margin: 20px 30px 40px 30px;
+}
+
+.common:hover {
+  color: #000000;
+  border-bottom: 1px solid #797979;
+  transform: scale(1.1);
+}
+
+.title-trust {
+  font-weight: 500;
+}
+
+.trust-icon-item {
+  margin-bottom: 1em;
+}
+
+/* Container menu */
+
+.title-cnt h1 {
+  font-weight: 600;
+}
+
+.shop_menu {
+  padding-bottom: 52px;
+  display: block;
+}
+
+.shop_menu .btn_shopmenu {
+  padding-top: 0.6em;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 5px 32px 5px 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+}
+
+.shop_menu .active {
+  color: #000000;
+  border-bottom: 1px solid #797979;
+}
+
+.shop_menu .btn_shopmenu:hover {
+  color: #000000;
+  border-bottom: 1px solid #797979;
+}
+
+.filter-btn button {
+  border: rgb(43, 41, 41) solid 0.5px !important;
+  border-radius: 0.5em;
+  font-weight: 500;
+  color: rgb(43, 41, 41) !important;
+}
+
+.filter-btn button:hover {
+  transform: scale(1.1);
+  color: rgb(43, 41, 41) !important;
+  border: rgb(43, 41, 41) solid 1px !important;
+}
+
+/*Create account*/
+
+.btn-signin, .btn-signup {
+  line-height: 1em;
+}
+
+.btn-signin .btn-signup p {
+  color: #222 !important;
+}
+
+.sign-title {
+  font-weight: 500 !important;
+}
+
+.btn-signup:hover, .btn-signin:hover {
+  display: block;
+  cursor: pointer;
+  color: rgb(27, 168, 255);
+  border-bottom: 3px solid rgb(27, 168, 255);
+}
+
+.signup {
+  padding-left: 0px !important;
+  display: flex;
+  width: 100%;
+  margin-left: 1em;
+}
+
+.leftsign {
+  padding-top: 15px;
+  width: 50%;
+  float: left;
+  padding: 0px 30px;
+  overflow: hidden;
+  border-right: hsl(202, 76%, 95%) solid 1px;
+}
+
+.rightsign {
+  float: left;
+  font-size: 16px;
+  width: 50%;
+  text-align: left;
+  font-weight: 300;
+  display: block;
+  cursor: pointer;
+  padding: 15px 5px 7px;
+  text-decoration: none;
+}
+
+.leftsign {
+  padding-top: 10px;
+}
+
+.check {
+  float: left;
+  margin-left: 7em;
+}
+
+.check label {
+  font-size: 14px;
+}
+
+.rightsign label.lb {
+  margin-top: 10px;
+}
+
+.border-all {
+  border-radius: 100px !important;
+}
+
+/* Carts */
+
+/* ------------------- Footer ----------------- */
+
+.page-footer {
+  background: #222;
+}
+
+.page-footer a:hover {
+  text-decoration: none;
+  color: #666bdf !important;
+  overflow: hidden;
+}
+
+.page-footer h6 {
+  color: white !important;
+}
+
+.page-footer a {
+  color: white !important;
+}
+
+.page-footer p {
+  color: white !important;
+}
+
+.rgba-white-slight {
+  background-color: rgba(255, 255, 255, .1);
+}

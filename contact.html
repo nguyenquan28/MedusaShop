@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/logo-mini.png" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+
+</head>
+
+<body>
+
+    <!--  Menu  -->
+    <header>
+        <!--Navbar top -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black mb-0 p-md-0">
+            <div class="top-left">
+                <p>Free shipping for standard order over $100</p>
+            </div>
+            <ul class="navbar-nav ml-auto nav-flex-icons mr-3">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--/.Navbar top-->
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light lighten-5">
+
+            <a class="ml-3" href="Home.html" title="home">
+                <img src="https://cdn11.bigcommerce.com/s-80j7zjtb20/images/stencil/original/new_medusa_logo23-02-1_1536271402__37042.original.png"
+                    alt="">
+            </a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto font-weight-bold offset-2 col-md-4">
+                    <li class="nav-item">
+                        <a class="nav-link " href="Home.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Promotion</a>
+                    </li>
+                    <li class="nav-item  actives">
+                        <a class="nav-link " href="contact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item" id="admin">
+                        <a class="nav-link " href="admin.html">Admin</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+
+                <form class="form-outline">
+                    <div class="md-form my-0 mr-5 ml-3">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search for Name"
+                            aria-label="Search">
+                    </div>
+                </form>
+            </div>
+            <!-- Collapsible content -->
+
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <!--  Container  -->
+    <section class="contact">
+        <div class="container">
+            <div class="box-contact">
+                <div class="contact-left">
+                    <form>
+                        <h4 class="contact-name">
+                            Send Us A Message
+                        </h4>
+    
+                        <div class="contact-mail">
+                            <input class="ct-mail" id="ct-mail" type="email" name="email" placeholder="Your Email Address">
+                            <a class="img-mail far fa-envelope" alt="ICON"></a>
+                        </div>
+    
+                        <div class="contact-comment">
+                            <textarea class="ct-comment" id="ct-comment" name="msg"
+                                placeholder="How Can We Help?"></textarea>
+                        </div>
+    
+                        <button class="contact-sub" onclick="SendEmail()">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="contact-right">
+                    <div class="ct-address">
+                        <div class="ct-img-icon">
+                            <span class="fas fa-map-marker-alt"></span>
+                        </div>
+    
+                        <div class="title">
+                            <span class="title-name">
+                                Address
+                            </span>
+    
+                            <p class="title-cm">
+                                33 Xô Viết - Nghệ Tĩnh - Hải Châu - Đà Nẵng
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="ct-address">
+                        <div class="ct-img-icon">
+                            <span class="fas fa-phone-alt"></span>
+                        </div>
+    
+                        <div class="title">
+                            <span class="title-name">
+                                Lets Talk
+                            </span>
+    
+                            <p class="title-cm">
+                                +84 123456789
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="ct-address">
+                        <span class="ct-img-icon">
+                            <span class="far fa-envelope"></span>
+                        </span>
+    
+                        <div class="title">
+                            <span class="title-name">
+                                Sale Support
+                            </span>
+    
+                            <p class="title-cm">
+                                abc.123@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  Footer  -->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">MEDUSA</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor diam tellus, non accumsan
+                        mi finibus in. Curabitur feugiat consequat nisi rutrum tempor.</p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p>
+                        <a href="#!">Clothes</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bags</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shoes</a>
+                    </p>
+                    <p>
+                        <a href="#!">Watchs</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> 696 Le Duan, Da Nang</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> medusalala123@gmail.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +84 369 696 969</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> +84 4969 696</p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2019 Design by:
+                        <a href="#"> Quan Agusta 2019 </a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-facebook-f"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-twitter"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-google-plus-g"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-linkedin-in"></i></strong>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- ------------------------------------ Footer ------------------------------------ -->
+
+    <!-- ------------------------------------ JS JQuery ------------------------------------ -->
+    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script type="text/javascript" src="main.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

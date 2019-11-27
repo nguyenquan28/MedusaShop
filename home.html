@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/logo-mini.png" />
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    <!-- Modal carts -->
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--  Menu  -->
+    <header>
+        <!-- <li class="nav-item iconLogin" id="iconLogin">
+            <a class="nav-link " href="#" data-toggle="modal" data-target=".bd-example-modal-md" title="Login"><i
+                    class="fas fa-sign-in-alt"></i></a>
+        </li>
+        <li class="nav-item iconLogout" id="iconLogout">
+            <a class="nav-link " href="#" title="Logup"><i class="fas fa-sign-out-alt"></i></a>
+        </li> -->
+        <!--Navbar top -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black mb-0 p-md-0">
+            <div class="top-left">
+                <p>Free shipping for standard order over $100</p>
+            </div>
+            <ul class="navbar-nav ml-auto nav-flex-icons mr-3 ">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="modal" data-target="#ModalLogin">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--/.Navbar top-->
+
+        <!-- Login -->
+        <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="signup col-md-12">
+                            <div class="leftsign col-md-5">
+                                <h2>Create Account</h2>
+                                <p>Create an account to track orders, save a list of favorite products, receive many attractive deals.</p>
+                                <img class="mt-5" src="images/signup.png" alt="">
+                            </div>
+                            <div class="rightsign col-md-7">
+                                <div class="row">
+                                    <div class="btn-signin col-md-6 text-center mb-3">
+                                        <p class="sign-title" id="Click-login"><strong>SignIn</strong></p>
+                                    </div>
+                                    <div class="btn-signup col-md-6 text-center mb-3">
+                                        <p class="sign-title" id="click-create-account" ><strong>SignUp</strong></p>
+                                    </div>
+                                </div>
+
+                                <!-- Create account form -->
+                                <div class="create-account" id="form-create-account">
+                                    <form class="user" id="form">
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 lb">Name</label>
+                                            <input type="text" class="form-control col-lg-8" id="hoten" placeholder="Name">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 lb">Phone</label>
+                                            <input type="number" class="form-control col-lg-8" id="phone" placeholder="Phone number">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 lb">Email</label>
+                                            <input type="email" name="email" class="form-control col-lg-8" id="email" placeholder="Email">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 lb">Address</label>
+                                            <input type="text" class="form-control col-lg-8" id="diachi" placeholder="Address">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 lb">Password</label>
+                                            <input type="text" class="form-control col-lg-8" id="matkhau" placeholder="Password">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 ">Gender</label>
+                                            <input class="form-control col-lg-1" type="radio" style="font-size: 5px;" name="gioitinh" id="Checkbox1"
+                                                value="option1">Men
+                                            <input class="form-control col-lg-1" type="radio" style="font-size: 5px;" name="gioitinh" id="Checkbox2"
+                                                value="option2">Women
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="date" class="col-lg-3 lb">Birthday</label>
+                                            <input class="col-lg-8" name="day" id="ngaysinh" type="date">
+                                        </div>
+                                        <div class="form-check check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1"> Receive the info and promotions of <strong style="color:#DC3545">MEDUSA</strong> by email</label>
+                                        </div>
+                                    </form>
+                                    <button type="click" id="Login" onclick="createAccount()" class="btn btn-danger"
+                                        style="width: 95% ; margin-bottom: 10px; margin-top: 10px;">Register</button>
+                                    <p> When you click <strong style="color:#DC3545">Register</strong> , you agree to make all purchases under the terms of <strong style="color:#DC3545">MEDUSA</strong> .</p>
+                                </div>
+
+                                <!-- Login form -->
+                                <div class="login-form" id="form-login">
+                                    <form class="user mb-4" >
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 lb">Email/Phone</label>
+                                            <input type="text" class="form-control col-lg-8" id="hoten" placeholder="Email/Phone">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 lb">Password</label>
+                                            <input type="number" class="form-control col-lg-8" id="phone" placeholder="Password">
+                                        </div>
+                                    </form>
+                                    <div class="d-flex flex-column">
+                                        <button class="btn btn-outline-danger p-2 border-all mb-2">Sign In</button>
+                                        <button class="btn btn-outline-primary p-2 border-all md-2">Sign In by Facebook</button>
+                                        <button class="btn btn-outline-warning p-2 border-all">Forget password</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carts -->
+        
+
+
+
+
+
+
+
+
+
+        <!--Navbar menu-->
+        <nav class="navbar navbar-expand-lg navbar-dark lighten-5 mb-0">
+
+            <a class="ml-3" href="Home.html" title="home">
+                <img src="https://cdn11.bigcommerce.com/s-80j7zjtb20/images/stencil/original/new_medusa_logo23-02-1_1536271402__37042.original.png"
+                    alt="">
+            </a>
+        
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" 
+             aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+        
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto font-weight-bold offset-2 col-md-4">
+                    <li class="nav-item actives">
+                        <a class="nav-link " href="home.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Promotion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item" id="admin">
+                        <a class="nav-link " href="admin.html">Admin</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+        
+                <form class="form-outline">
+                    <div class="md-form my-0 mr-5 ml-3">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search for Name" aria-label="Search">
+                    </div>
+                </form>
+            </div>
+            <!-- Collapsible content -->
+        
+        </nav>
+        <!--/.Navbar menu-->
+    </header>
+
+    <!--  Slide Show  -->
+    <div class="slideshow">
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active animated fadeInDow
+                    nBig">
+                    <img src="images/slide-01.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                        <h1><strong>NEW SEASON</strong></h1>
+                        <p>Women Collection 2019</p>
+                    </div>
+                </div>
+                <div class="carousel-item animated fadeInDownBig">
+                    <img src="images/slide-03.jpg" alt="Chicago">
+                    <div class="carousel-caption ">
+                        <h1><strong>NEW ARRIVALS</strong></h1>
+                        <p>Let go now to Medusa!</p>
+                    </div>
+                </div>
+                <div class="carousel-item animated fadeInDownBig">
+                    <img src="images/slide-02.jpg" alt="New York">
+                    <div class="carousel-caption ">
+                        <h1><strong>Jackets &amp; Coats</strong></h1>
+                        <p>Men New-Season</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--  Container  -->
+    <div class="container">
+        <!--  content ctn -->
+        <div class="d-flex justify-content-center">
+            <div class="text-center common">
+                <span class="trust-icon-item d-inline-block">
+                    <img src="images/icons/bag.png" alt="">
+                </span>
+                <h6 class="title-trust">High-quality Goods</h6>
+                <p class="font-small">Enjoy top quality items for less</p>
+            </div>
+            <div class="text-center common">
+                <span class="trust-icon-item d-inline-block">
+                    <img src="images/icons/headphone.png" alt="">
+                </span>
+                <h6 class="title-trust">24/7 Livechat</h6>
+                <p class="font-small">Get instant assistance whenever you need it</p>
+            </div>
+            <div class="text-center common">
+                <span class="trust-icon-item d-inline-block">
+                    <img src="images/icons/shipper.jpg" alt="">
+                </span>
+                <h6 class="title-trust">Express Shipping</h6>
+                <p class="font-small">Multiple fast &amp; reliable delivery options</p>
+            </div>
+            <div class="text-center common">
+                <span class="trust-icon-item d-inline-block">
+                    <img src="images/icons/pay.png" alt="">
+                </span>
+                <h6 class="title-trust">Secure Payment</h6>
+                <p class="font-small">Multiple safe payment methods</p>
+            </div>
+        </div>
+
+        <!--  ctn  -->
+        <div class="body-ctn">
+            <div class="title-cnt pb-2">
+                <h1>PRODUCT OVERVIEW</h1>
+            </div>
+            <div class="filter-cnt d-flex mb-3">
+                <div class="shop_menu mr-auto p-2" id="myBtnShop_Menu">
+                    <button class="btn_shopmenu active mr-auto p-2" >All Product</button>
+                    <button class="btn_shopmenu mr-auto p-2">Women</button>
+                    <button class="btn_shopmenu mr-auto p-2">Men</button>
+                    <button class="btn_shopmenu mr-auto p-2">Shoes</button>
+                    <button class="btn_shopmenu mr-auto p-2">Clock</button>
+                </div>
+                <div class="filter-btn p-2 bd-highlight">
+                    <button class="btn btn-outline-light">Filter</button>
+                </div>
+                <div class="filter-btn p-2 bd-highlight">
+                    <button class="btn btn-outline-light">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--  Footer  -->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">MEDUSA</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor diam tellus, non accumsan
+                        mi finibus in. Curabitur feugiat consequat nisi rutrum tempor.</p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p>
+                        <a href="#!">Clothes</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bags</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shoes</a>
+                    </p>
+                    <p>
+                        <a href="#!">Watchs</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> 696 Le Duan, Da Nang</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> medusalala123@gmail.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +84 369 696 969</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> +84 4969 696</p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2019 Design by:
+                        <a href="#"> Quan Agusta 2019 </a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-facebook-f"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-twitter"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-google-plus-g"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-linkedin-in"></i></strong>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- ------------------------------------ Footer ------------------------------------ -->
+
+    <!-- ------------------------------------ JS JQuery ------------------------------------ -->
+    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
