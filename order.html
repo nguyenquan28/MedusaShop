@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="order.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body onload="showCart()">
+    <!-- Header -->
+    <div class="seo">
+        <div class="top-bar" style="color: #b2b2b2; margin-left: 2em; line-height: 45px;">
+            <p>Free shipping for standard order over $100</p>
+        </div>
+    </div>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="index.html" title="home"><img src="https://cdn11.bigcommerce.com/s-80j7zjtb20/images/stencil/original/new_medusa_logo23-02-1_1536271402__37042.original.png" style="width: 13em;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto font-weight-bold offset-1">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Promotion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Contacts.html">Contacts</a>
+                    </li>
+                    <li class="nav-item" id="admin">
+                        <a class="nav-link " href="Admin.html">Admin</a>
+                    </li>
+                </ul>
+                <div class="search-form input-group input-group-md">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <div class="input-group-prepend" style="float: left;">
+                        <button type="button" style="color: #00000080; border-color: #9f979780; border-radius: 0 5px 5px 0;" class="btn btn-light"><strong>Search</strong></button>
+                    </div>
+                </div>
+                <div class="log">
+                    <ul class="navbar-nav mr-auto font-weight-bold offset-1">
+                        <li class="nav-item iconprofile" id="profile">
+                            <a class="nav-link icon" href="profile.html" title="Profile" onclick="showProfile()"><i class="fas fa-user-tag"></i></a>
+                        </li>
+                        <li class="nav-item icon" id="iconlog">
+                            <a class="nav-link " href="#" data-toggle="modal" data-target=".bd-example-modal-md" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+                        </li>
+                        <li class="nav-item icon" id="iconout">
+                            <a class="nav-link " href="#" onclick="logup()" title="Logup"><i class="fas fa-sign-out-alt"></i></a>
+                        </li>
+                        <li class="nav-item icon" id="iconcarts">
+                            <a class="nav-link " href="#" title="Carts"><i class="fas fa-cart-arrow-down"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ==================================================================================== -->
+
+    <!-- Login -->
+
+    <div class="login_container" id="loginCT">
+        <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- Login -->
+                    <div class="Lg">
+                        <div class="login">
+                            <div class="text-center">
+                                <h1 style="color: green">Welcome<strong> Back!</strong></h1>
+                            </div>
+                            <form class="user" id="form">
+                                <div class="form-group">
+                                    <input type="" class="form-control" id="name" placeholder="User Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                    <label>Remember Me</label>
+
+                                </div>
+                            </form>
+                            <button type="click" id="Login" onclick="checkLogin()" class="btn btn-danger" style="width: 100% ; margin-bottom: 10px;">Login</button>
+                            <a class="small" href="Create_Account.html">Create an Account!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================================================================================== -->
+    
+    <div class="order">
+        <div class="shipping_Address container" style="padding: 0 ;margin: 0 auto;height: 100%;" >
+            <div class="order_add">
+                <div class="add_newaddress " id="add_newaddress">
+                    <h5 class="newaddress_title title_boxorder">Add new shipping Address</h5>
+                    <div>
+                        <form >
+                            <div class="form_import">
+                                <div class="form_import_box">
+                                    <div class="import_box import_name">
+                                        <label class="import_lb">Full name</label>
+                                        <input class="import_input input" id="fullname" type="text" placeholder="First Last"data-spm-anchor-id="">
+                                    </div>
+                                    <div class="import_box import_phone">
+                                        <label class="import_lb" >Phone Number</label>
+                                        <input class="import_input input" id="phone" type="number" placeholder="Please enter your phone number" pattern="[0-9]*" error="Mandatory Field." data-spm-anchor-id="">
+                                    </div>
+                                    <div class="import_box import_email">
+                                        <label class="import_lb">Email</label>
+                                        <input class="import_input input" id="email" type="text" placeholder="Please enter your email"data-spm-anchor-id="">
+                                    </div>
+                                    <div class="import_box import_address">
+                                        <label class="import_lb">Address</label>
+                                        <input class="import_input input" id="address" type="text" placeholder="Please enter your address"data-spm-anchor-id="">
+                                    </div>
+                                    <div class="import_address">
+                                        <select class="form-control" id="select" onchange="">
+                                            <option id="pay1" value="0.0">Chọn hình thức thanh toán</option>
+                                            <option id="pay2" value="0.1">Internet Banking/ATM nội địa(giảm 10%)</option>
+                                            <option id="pay3" value="0.15" >Thanh toán trực tuyến(giảm 20%)</option>
+                                            <option id="pay4" value="0">Thanh toán khi nhận hàng</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="form_button" onclick="order_confirm()">Confirm</button>
+                    </div>
+                </div>
+                <!-- box list order product -->
+                <div class="show_orderproduct">
+                    <h5 class="orderproduct_bill title_boxorder">Order Product</h5>
+                    <hr>
+
+                    <!-- car show product order -->
+                    <div class="box_orderproduct" id="box_orderproduct">
+                        
+                    </div>
+                    <button type="button" style="margin-top: 25px; margin-left: 15px;" class="btn btn-outline-primary btn-sm" onclick="updateCarts()">Update</button>
+                    
+                </div>
+            </div>
+            <div class="bill">
+                <div class="bill_box">
+                    <h5 class="bill_title title_boxorder">Shipping & Billing</h5>
+                    <hr style="width: 90%; margin: 0 auto;">
+                    <div class="bill_showaddress" style="margin-top: 10px">
+                        <div class="bill_showgroup">
+                            <i class="fas fa-user-circle bill_icon"></i>  
+                            <p class="bill_username" id="bill_username">Full Name</p>
+                        </div>
+                    </div>
+                    <div class="bill_showaddress">
+                        <div class="bill_showgroup">
+                            <i class="fas fa-mobile-alt bill_icon"></i>
+                            <p class="bill_other" id="bill_phone">Phone number</p>
+                        </div>
+                    </div>
+                    <div class="bill_showaddress">
+                        <div class="bill_showgroup">
+                            <i class="far fa-envelope bill_icon"></i>
+                            <p class="bill_other" id="bill_email">abc123@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="bill_showaddress">
+                        <div class="bill_showgroup">
+                            <i class="fas fa-map-marked-alt bill_icon"></i>
+                            <p class="bill_other" id="bill_address">Address</p>
+                        </div>
+                    </div>
+                     
+                </div>
+                <hr style="border: 0.5px solid black;">
+                <div class="order_Summary">
+                    <h5 class="bill_summany title_boxorder">Order Summary</h5>
+                    <hr style="width: 90%; margin: 0 auto;">
+                    <div class="box_Summary">
+                        <div class="box_pay Subtotal">
+                            <h5 class="pay_sub">Subtotal <span>(1 Items)</span></h5>
+                            <p class="money_sub" id="total">000.000$</p>
+                        </div>
+                        <div class="box_pay Subtotal">
+                            <h5 class="pay_sub">Discount</h5>
+                            <p class="money_sub" id="discount">000.000$</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="place_order" onclick="payCarts()">Place Order</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4" style="float: left;width: 100%;">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">MEDUSA</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor diam tellus, non accumsan mi finibus in. Curabitur feugiat consequat nisi rutrum tempor.</p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p>
+                        <a href="#!">Clothes</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bags</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shoes</a>
+                    </p>
+                    <p>
+                        <a href="#!">Watchs</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> 696 Le Duan, Da Nang</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> medusalala123@gmail.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +84 369 696 969</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> +84 4969 696</p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2019 Design by:
+                        <a href="#">
+                                    CoRe Team 2019
+                                  </a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-facebook-f"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-twitter"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-google-plus-g"></i></strong>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <strong><i class="fab fa-linkedin-in"></i></strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- 
+            <script>
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    items:4,
+                    loop:true,
+                    margin:10,
+                    autoplay:true,
+                    autoplayTimeout:1000,
+                    autoplayHoverPause:true
+                });
+            </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- <script type="text/javascript" src="main.js"></script> -->
+    <script type="text/javascript" src="order.js"></script>
+
+</body>
+
+</html>

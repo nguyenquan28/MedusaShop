@@ -1,0 +1,258 @@
+.order{
+    float: left;
+    width: 100%;
+    background: #f3f3f3; 
+    height:;
+}
+.shipping_Address{
+	background: white;
+	height: 560px;
+}
+/*box left import*/
+.order_add{
+    background: white;
+    width:58%;
+    height: 100%;
+    float: left;
+
+}
+.add_newaddress{
+    width: 100%;
+	padding:18px;
+    border: 10px solid #f3f3f3;
+    height: 610px;
+    
+}
+.title_boxorder{
+    padding-left: 22px;
+    font-size: 20px;
+    color: #212121;
+    font-weight: 400;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.newaddress_title{
+    
+}
+.form_addressfull{
+	padding: 0;
+}
+.form_import_box{
+	width:85%;
+    float: left;
+    padding-left: 70px;
+    padding-right: 30px;
+}
+.form_import_box .import_box{
+	padding-bottom: 25px;
+	width: 100%;
+}
+.form_import_box  .import_lb{
+	height: 15px;
+	font-size: 13px;
+    line-height: 15px;
+    overflow: hidden;
+    color: #424242;
+    display: block;
+    margin-bottom: 5px;
+}
+.form_import_box  .input{
+	width: 100%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px 0;
+    padding: 0 35px 0 10px;
+    margin-bottom: 2px;   
+}
+.form_button{
+    border-radius: 3px;
+    float: right;
+    margin: 30px 80px 0 0;
+    color: white;
+    width: 168px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 30px;
+    border-style: solid;
+    font-weight: 500;
+    background: #1a9cb7;
+    border-color: transparent;
+}
+/*bill-------------*/
+.bill{
+    background: white;
+    width: 42%;
+    float: right;
+    border: 10px solid #f3f3f3;
+    border-left: 0;
+    padding:18px;
+    height: 100%;
+}
+.bill_showgroup{
+    padding-bottom: 8px;
+    padding-right: 30px;
+}
+.bill_icon{
+    text-align: center;
+    float: left;    
+    width: 30px;
+    color: #5bbbce;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.bill_username{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #212121;
+}
+.bill_other{
+    font-size: 18px;
+    line-height: 25px;
+    color: #212121;
+}
+/*order=-------------*/
+.box_pay{
+    margin: 10px 0 0 30px;
+}
+.pay_sub{
+    color: #757575;
+    float: left;
+    width: 70%;
+    flex: 1;
+    font-size: 16px;
+    line-height: 25px;
+}
+.money_sub{
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left: ;
+    color: black;
+     letter-spacing: -.44px; 
+    vertical-align: middle;
+}
+.place_order{
+    width: 100%;
+    height: 40px;
+    float: right;
+    line-height: 14px;
+    margin-left: 12px;
+    border-style: solid;
+    background-color: #f57224;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+/*show product*/
+.show_orderproduct{
+    background: white;
+    float: left;
+    width: 100%;
+    /*margin-top: -10px;*/
+    padding: 18px;
+    border: 10px solid #f3f3f3;
+}
+.box_orderproduct{
+    margin-bottom: 10px;
+    height: 90px;
+}
+img.img_orderproduct{
+    width: 100px;
+    float: left;
+    margin-left: 20px;
+    padding: 0px 18px 0 0;
+}
+/*box_orderTT*/
+.orderTT_name{
+    font-size: 17px;
+}
+.box_orderTT{
+    padding-top: 8px;
+     width: 40%;
+    font-size: 20px;
+    float: left;
+}
+.orderTT_id{
+    font-size: 14px;
+    margin-top: 0;
+}
+/*--=*/
+.box_orderprice{
+    margin-top: 8px;
+    float: left;
+    width: 20%;
+}
+.orderprice{
+    font-size: 17px;
+    font-weight: 500;
+}
+.orderoldprice{
+    font-weight: 400;
+    font-size: 16px;
+}
+/*nút số lượng*/
+.quantity {
+    margin-top: 8px;
+ display: inline-block; }
+
+.quantity .input-text.qty {
+ width: 42px;
+ height: 32px;
+ padding: 0 5px;
+ text-align: center;
+ background-color: transparent;
+ border: 0;
+}
+
+.quantity.buttons_added {
+ text-align: left;
+ position: relative;
+ white-space: nowrap;
+ vertical-align: top; }
+
+.quantity.buttons_added input {
+ display: inline-block;
+ margin: 0;
+ vertical-align: top;
+ box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+width: 32px;
+ height: 32px;
+ background-color: #ffffff;
+ border: 0;
+ background: #eff0f5;
+ cursor:pointer;}
+
+.quantity.buttons_added .minus {
+ border-right: 0; }
+
+.quantity.buttons_added .plus {
+ border-left: 0; }
+
+ .quantity .input-text.qty:hover{
+    border:  1px solid #c7c7c7;
+ }
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+ color: white;
+ background: #c7c7c7; }
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ margin: 0; }
+ 
+ .quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+ outline: none; }

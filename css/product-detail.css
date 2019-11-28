@@ -1,3 +1,121 @@
-.link-product{
+ul li:hover {
+    cursor: pointer;
+}
+
+/* Link */
+
+.link-product {
     color: black;
+}
+
+/* Image  detal product */
+
+.small-image ul {
+    padding: 0;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.small-image ul li img:hover{
+    border: 1px solid grey;
+}
+.small-image img {
+    display: flex;
+    width: 80px;
+    margin-bottom: 2em;
+}
+
+.big-image img {
+    display: flex;
+    width: 100%;
+}
+
+.center {
+    width: 150px;
+    margin: 40px auto;
+}
+
+/* Button qualities */
+
+.quantity {
+    display: inline-block;
+}
+
+.quantity .input-text.qty {
+    width: 42px;
+    height: 32px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+}
+
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus, .quantity.buttons_added .plus {
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border: 0;
+    background: #eff0f5;
+    cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity .input-text.qty:hover {
+    border: 1px solid #c7c7c7;
+}
+
+.quantity.buttons_added .minus:hover, .quantity.buttons_added .plus:hover {
+    color: white;
+    background: #c7c7c7;
+}
+
+.quantity input::-webkit-outer-spin-button, .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus, .quantity.buttons_added .plus:focus {
+    outline: none;
+}
+
+/* infomation product */
+.tab-detal{
+    display: block;
+    border: 1px solid grey !important;
+
+}
+
+.tab-detal ul {
+    list-style: none;
+}
+
+.tab-detal ul li:hover {
+    color: #333;
+    border-bottom: 1px solid #797979;
+}
+
+.text-pane{
+    color: grey;
 }
