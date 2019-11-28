@@ -6,12 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/icons/logo-mini.png" />
-    
+
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
@@ -24,7 +25,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    
+
     <!-- Modal carts -->
     <script>
         window.console = window.console || function (t) { };
@@ -52,18 +53,7 @@
             <div class="top-left">
                 <p>Free shipping for standard order over $100</p>
             </div>
-            <ul class="navbar-nav ml-auto nav-flex-icons mr-3 ">
-                <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </li>
-                <li class="nav-item" data-toggle="modal" data-target="#ModalLogin">
-                    <a class="nav-link waves-effect waves-light">
-                        <i class="fas fa-sign-in-alt"></i>
-                    </a>
-                </li>
-            </ul>
+
         </nav>
         <!--/.Navbar top-->
 
@@ -75,8 +65,9 @@
                     <div class="modal-body">
                         <div class="signup col-md-12">
                             <div class="leftsign col-md-5">
-                                <h2>Create Account</h2>
-                                <p>Create an account to track orders, save a list of favorite products, receive many attractive deals.</p>
+                                <h2 id="title-form-login">Login</h2>
+                                <p>Account can track orders, save a list of favorite products, receive many attractive
+                                    deals.</p>
                                 <img class="mt-5" src="images/signup.png" alt="">
                             </div>
                             <div class="rightsign col-md-7">
@@ -85,7 +76,7 @@
                                         <p class="sign-title" id="Click-login"><strong>SignIn</strong></p>
                                     </div>
                                     <div class="btn-signup col-md-6 text-center mb-3">
-                                        <p class="sign-title" id="click-create-account" ><strong>SignUp</strong></p>
+                                        <p class="sign-title" id="click-create-account"><strong>SignUp</strong></p>
                                     </div>
                                 </div>
 
@@ -94,30 +85,35 @@
                                     <form class="user" id="form">
                                         <div class="form-group row">
                                             <label class="col-lg-3 lb">Name</label>
-                                            <input type="text" class="form-control col-lg-8" id="hoten" placeholder="Name">
+                                            <input type="text" class="form-control col-lg-8" id="hoten"
+                                                placeholder="Name">
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 lb">Phone</label>
-                                            <input type="number" class="form-control col-lg-8" id="phone" placeholder="Phone number">
+                                            <input type="number" class="form-control col-lg-8" id="phone"
+                                                placeholder="Phone number">
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 lb">Email</label>
-                                            <input type="email" name="email" class="form-control col-lg-8" id="email" placeholder="Email">
+                                            <input type="email" name="email" class="form-control col-lg-8" id="email"
+                                                placeholder="Email">
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 lb">Address</label>
-                                            <input type="text" class="form-control col-lg-8" id="diachi" placeholder="Address">
+                                            <input type="text" class="form-control col-lg-8" id="diachi"
+                                                placeholder="Address">
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 lb">Password</label>
-                                            <input type="text" class="form-control col-lg-8" id="matkhau" placeholder="Password">
+                                            <input type="text" class="form-control col-lg-8" id="matkhau"
+                                                placeholder="Password">
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 ">Gender</label>
-                                            <input class="form-control col-lg-1" type="radio" style="font-size: 5px;" name="gioitinh" id="Checkbox1"
-                                                value="option1">Men
-                                            <input class="form-control col-lg-1" type="radio" style="font-size: 5px;" name="gioitinh" id="Checkbox2"
-                                                value="option2">Women
+                                            <input class="form-control col-lg-1" type="radio" style="font-size: 5px;"
+                                                name="gioitinh" id="Checkbox1" value="option1">Men
+                                            <input class="form-control col-lg-1" type="radio" style="font-size: 5px;"
+                                                name="gioitinh" id="Checkbox2" value="option2">Women
                                         </div>
                                         <div class="form-group row">
                                             <label for="date" class="col-lg-3 lb">Birthday</label>
@@ -125,30 +121,36 @@
                                         </div>
                                         <div class="form-check check">
                                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1"> Receive the info and promotions of <strong style="color:#DC3545">MEDUSA</strong> by email</label>
+                                            <label class="form-check-label" for="defaultCheck1"> Receive the info and
+                                                promotions of <strong style="color:#DC3545">MEDUSA</strong> by
+                                                email</label>
                                         </div>
                                     </form>
                                     <button type="click" id="Login" onclick="createAccount()" class="btn btn-danger"
                                         style="width: 95% ; margin-bottom: 10px; margin-top: 10px;">Register</button>
-                                    <p> When you click <strong style="color:#DC3545">Register</strong> , you agree to make all purchases under the terms of <strong style="color:#DC3545">MEDUSA</strong> .</p>
+                                    <p> When you click <strong style="color:#DC3545">Register</strong> , you agree to
+                                        make all purchases under the terms of <strong
+                                            style="color:#DC3545">MEDUSA</strong> .</p>
                                 </div>
 
                                 <!-- Login form -->
                                 <div class="login-form" id="form-login">
-                                    <form class="user mb-4" >
+                                    <form class="user mb-4">
                                         <div class="form-group row">
                                             <label class="col-lg-3 lb">Email/Phone</label>
-                                            <input type="text" class="form-control col-lg-8" id="hoten" placeholder="Email/Phone">
+                                            <input type="text" class="form-control col-lg-8" id="hoten"
+                                                placeholder="Email/Phone">
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-3 lb">Password</label>
-                                            <input type="number" class="form-control col-lg-8" id="phone" placeholder="Password">
+                                            <input type="number" class="form-control col-lg-8" id="phone"
+                                                placeholder="Password">
                                         </div>
                                     </form>
                                     <div class="d-flex flex-column">
-                                        <button class="btn btn-outline-danger p-2 border-all mb-2">Sign In</button>
-                                        <button class="btn btn-outline-primary p-2 border-all md-2">Sign In by Facebook</button>
-                                        <button class="btn btn-outline-warning p-2 border-all">Forget password</button>
+                                        <button class="btn btn-danger p-2 border-all mb-2">Sign In</button>
+                                        <button class="btn btn-primary p-2 border-all mb-2">Sign In by Facebook</button>
+                                        <button class="btn btn-warning p-2 border-all">Forget password</button>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +161,7 @@
         </div>
 
         <!-- Carts -->
-        
+
 
 
 
@@ -176,18 +178,18 @@
                 <img src="https://cdn11.bigcommerce.com/s-80j7zjtb20/images/stencil/original/new_medusa_logo23-02-1_1536271402__37042.original.png"
                     alt="">
             </a>
-        
+
             <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" 
-             aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        
+
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="basicExampleNav">
-        
+
                 <!-- Links -->
-                <ul class="navbar-nav mr-auto font-weight-bold offset-2 col-md-4">
+                <ul class="navbar-nav font-weight-bold offset-1 col-md-6">
                     <li class="nav-item actives">
                         <a class="nav-link " href="home.html">Home<span class="sr-only">(current)</span></a>
                     </li>
@@ -205,15 +207,29 @@
                     </li>
                 </ul>
                 <!-- Links -->
-        
-                <form class="form-outline">
-                    <div class="md-form my-0 mr-5 ml-3">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search for Name" aria-label="Search">
+
+                <form class="form-outline col-md-4">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search for Name"
+                            aria-label="Search">
                     </div>
                 </form>
+
+                <ul class="navbar-nav ml-auto nav-flex-icons mr-3 ">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="modal" data-target="#ModalLogin">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <!-- Collapsible content -->
-        
+
         </nav>
         <!--/.Navbar menu-->
     </header>
@@ -300,7 +316,7 @@
             </div>
             <div class="filter-cnt d-flex mb-3">
                 <div class="shop_menu mr-auto p-2" id="myBtnShop_Menu">
-                    <button class="btn_shopmenu active mr-auto p-2" >All Product</button>
+                    <button class="btn_shopmenu active mr-auto p-2">All Product</button>
                     <button class="btn_shopmenu mr-auto p-2">Women</button>
                     <button class="btn_shopmenu mr-auto p-2">Men</button>
                     <button class="btn_shopmenu mr-auto p-2">Shoes</button>
@@ -436,7 +452,7 @@
                                 </a>
                             </li>
                         </ul>
-                        
+
                     </div>
                 </div>
                 <!-- Grid column -->
@@ -449,23 +465,23 @@
 
     <!-- ------------------------------------ JS JQuery ------------------------------------ -->
     <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+
     <script type="text/javascript" src="js/main.js"></script>
-    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <script>
         AOS.init();
     </script>

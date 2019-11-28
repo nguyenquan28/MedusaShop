@@ -1,6 +1,4 @@
-i {
-  color: #b2b2b2;
-}
+
 /* ------------------- Header ----------------- */
 
 .mr-sm-2 {
@@ -164,14 +162,19 @@ i {
   border: rgb(43, 41, 41) solid 1px !important;
 }
 
+/* Edit 27/11 */
 /*Create account*/
 
 .btn-signin, .btn-signup {
   line-height: 1em;
 }
 
-.btn-signin .btn-signup p {
-  color: #222 !important;
+.btn-signin p{
+  color: rgb(27, 168, 255);
+}
+
+.btn-signup p {
+  color: rgb(197, 212, 221);
 }
 
 .sign-title {
@@ -232,6 +235,10 @@ i {
 
 .border-all {
   border-radius: 100px !important;
+}
+
+.create-account{
+  display: none;
 }
 
 /* Carts */

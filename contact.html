@@ -55,26 +55,26 @@
         <!--/.Navbar top-->
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light lighten-5">
+        <nav class="navbar navbar-expand-lg navbar-dark lighten-5 mb-0">
 
             <a class="ml-3" href="Home.html" title="home">
                 <img src="https://cdn11.bigcommerce.com/s-80j7zjtb20/images/stencil/original/new_medusa_logo23-02-1_1536271402__37042.original.png"
                     alt="">
             </a>
-
+        
             <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" 
+             aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+        
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="basicExampleNav">
-
+        
                 <!-- Links -->
-                <ul class="navbar-nav mr-auto font-weight-bold offset-2 col-md-4">
+                <ul class="navbar-nav font-weight-bold offset-1 col-md-6">
                     <li class="nav-item">
-                        <a class="nav-link " href="Home.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link " href="home.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="shop.html">Shop</a>
@@ -82,7 +82,7 @@
                     <li class="nav-item">
                         <a class="nav-link " href="#">Promotion</a>
                     </li>
-                    <li class="nav-item  actives">
+                    <li class="nav-item actives">
                         <a class="nav-link " href="contact.html">Contacts</a>
                     </li>
                     <li class="nav-item" id="admin">
@@ -90,16 +90,28 @@
                     </li>
                 </ul>
                 <!-- Links -->
-
-                <form class="form-outline">
-                    <div class="md-form my-0 mr-5 ml-3">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search for Name"
-                            aria-label="Search">
+        
+                <form class="form-outline col-md-4">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search for Name" aria-label="Search">
                     </div>
                 </form>
+
+                <ul class="navbar-nav ml-auto nav-flex-icons mr-3 ">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-toggle="modal" data-target="#ModalLogin">
+                        <a class="nav-link waves-effect waves-light">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <!-- Collapsible content -->
-
+        
         </nav>
         <!--/.Navbar-->
     </header>
@@ -328,7 +340,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
