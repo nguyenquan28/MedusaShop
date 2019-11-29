@@ -125,17 +125,44 @@
         </div>
 
         <!-- Image product -->
+
+
+
+
         <div class="body-detal row">
             <div class="small-image col-lg-1 col-md-2 col-2 col-sm-2">
-                <ul>
-                    <li><img src="images/product-detail-01.jpg" alt=""></li>
-                    <li><img src="images/product-detail-02.jpg" alt=""></li>
-                    <li><img src="images/product-detail-03.jpg" alt=""></li>
-                </ul>
+                <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link nav-image active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true">
+                        <img src="images/product-detail-01.jpg" alt="">
+                    </a>
+                    <a class="nav-link nav-image" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">
+                        <img src="images/product-detail-02.jpg" alt="">
+                    </a>
+                    <a class="nav-link nav-image" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false">
+                        <img src="images/product-detail-03.jpg" alt="">
+                    </a>
+                </div>
             </div>
 
-            <div class="big-image col-lg-5 col-md-9 col-9 col-sm-9 ml-3 mb-5">
-                <img src="images/product-detail-01.jpg" alt="">
+            <div class="big-image col-lg-5 col-md-9 col-9 col-sm-9 ml-1 mb-5">
+                <div class="tab-content pl-3" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <img src="images/product-detail-01.jpg" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <img src="images/product-detail-02.jpg" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        <img src="images/product-detail-03.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <img src="images/product-detail-01.jpg" alt=""> -->
             </div>
 
             <!-- detal product -->
@@ -170,12 +197,14 @@
                             </select>
                         </div>
                     </div>
-                    <div class="quantity buttons_added offset-2 mb-5">
+                    <div class="quantity buttons_added offset-2 mb-3 col-10">
                         <input type="button" value="-" class="minus">
                         <input type="number" id="mount" step="1" min="1" max="" name="quantity" value="1" title="Qty"
                             class="input-text qty text" size="4" pattern="" inputmode="">
                         <input type="button" value="+" class="plus">
                     </div>
+                    <button type="button" class="btn btn-primary border-all col-4 offset-2 font-weight-bold mb-5">ADD TO
+                        CART</button>
                 </form>
             </div>
         </div>
@@ -186,12 +215,12 @@
                 <ul class="nav nav-tabs d-flex flex-row justify-content-center" role="tablist">
                     <li class="nav-item text-center">
                         <a class="nav-link  active" data-toggle="tab" href="#description" role="tab"
-                            aria-expanded="false">Description</a>
+                            aria-expanded="true ">Description</a>
                     </li>
 
                     <li class="nav-item text-center">
                         <a class="nav-link" data-toggle="tab" href="#information" role="tab"
-                            aria-expanded="true">Additional information</a>
+                            aria-expanded="false">Additional information</a>
                     </li>
 
                     <li class="nav-item text-center">
@@ -280,8 +309,8 @@
                     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-expanded="false">
 
                         <!-- Comment -->
-                        <div class="comment">
-                            Sản phẩm như buồi!
+                        <div class="comment mb-5 d-flex flex-row justify-content-center">
+                            <div class="col-sm-10 col-md-8 col-lg-6 ">Sản phẩm như buồi!</div>
                         </div>
 
                         <!-- Feedback -->
@@ -297,9 +326,7 @@
                                     </p>
 
                                     <div class="flex-w flex-m pt-3">
-                                        <span class="stext-102 cl3 m-r-16">
-                                            Your Rating
-                                        </span>
+                                        <label for="RatingStar" class="mr-5">Your Rating</label>
 
                                         <span class="wrap-rating fs-18 cl11 pointer">
                                             <i class="far fa-star"></i>
@@ -314,12 +341,13 @@
                                     <div class="row pt-3 pl-1">
                                         <div class="form-group col-sm-12">
                                             <label for="forReviews">Your Reviews</label>
-                                            <textarea class="form-control" id="forReviews" rows="4"></textarea>
+                                            <textarea class="form-control" id="forReviews" rows="4"
+                                                placeholder="Comment here"></textarea>
                                         </div>
 
                                         <div class="form-group col-sm-6 pb-2">
                                             <label for="name">Name</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                                            <input type="text" class="form-control" id="name" placeholder="Name">
                                         </div>
 
                                         <div class="form-group col-md-6 pb-2">
@@ -328,8 +356,9 @@
                                                 placeholder="name@example.com">
                                         </div>
                                     </div>
-                                 
-                                    <button type="button" class="btn btn-dark border-all col-2 mb-3">Submit</button>
+
+                                    <button type="button"
+                                        class="btn btn-dark border-all font-weight-bold col-2 mb-3">Submit</button>
                                 </form>
                             </div>
                         </div>
