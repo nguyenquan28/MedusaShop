@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="scss/nav.scss">
+    <link rel="stylesheet" href="scss/transition.scss">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
@@ -182,27 +184,114 @@
 
         <!-- Infomation -->
         <div class="info">
-            <div class="tab-detal mb-4 mt-2 pt-4">
-                <ul class="d-flex flex-row justify-content-center">
-                    <li class="text-center pr-2 pl-2">Description</li>
-                    <li class="text-center pr-2 pl-2 ml-3 mr-3">Additional information</li>
-                    <li class="text-center pr-2 pl-2">Review</li>
-                </ul>
-                <hr>
+            <div class="tab-detal mb-4 pt-4 mb-4">
+                <ul class="nav nav-tabs d-flex flex-row justify-content-center" role="tablist">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" data-toggle="tab" href="#description" role="tab"
+                            aria-expanded="false">Description</a>
+                    </li>
 
-                <div class="tab-pane p-5">
-                    <p class="text-pane">Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in
-                        blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum
-                        sapien rhoncus pretium maximus. Nulla lectus enim, cursus et elementum sed, sodales vitae eros. Ut
-                        ex quam, porta consequat interdum in, faucibus eu velit. Quisque rhoncus ex ac libero varius
-                        molestie. Aenean tempor sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim,
-                        nunc nec laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras in
-                        arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.</p>
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" data-toggle="tab" href="#information" role="tab"
+                            aria-expanded="true">Additional information</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="nav-link" data-toggle="tab" href="#reviews" role="tab" aria-expanded="false">Reviews</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content pt-4">
+                    <!-- Desciption -->
+                    <div class="tab-pane fade" id="description" role="tabpanel" aria-expanded="false">
+                        <div class="how-pos2 p-lr-15-md">
+                            <p class="stext-102 cl6">
+                                Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla
+                                sit amet. Ut in blandit ipsum. Quisque luctus dui at ante aliquet, in hendrerit
+                                lectus interdum. Morbi elementum sapien rhoncus pretium maximus. Nulla lectus enim,
+                                cursus et elementum sed, sodales vitae eros. Ut ex quam, porta consequat interdum
+                                in, faucibus eu velit. Quisque rhoncus ex ac libero varius molestie. Aenean tempor
+                                sit amet orci nec iaculis. Cras sit amet nulla libero. Curabitur dignissim, nunc nec
+                                laoreet consequat, purus nunc porta lacus, vel efficitur tellus augue in ipsum. Cras
+                                in arcu sed metus rutrum iaculis. Nulla non tempor erat. Duis in egestas nunc.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Parameter -->
+                    <div class="tab-pane fade active show" id="information" role="tabpanel" aria-expanded="true">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-10 col-md-8 col-lg-6">
+                                <ul class="pl-3 pr-2">
+                                    <li class="flex-w flex-t mb-1 mt-1 ml-2 row">
+                                        <span class="w-25">
+                                            Weight:
+                                        </span>
+
+                                        <span class="w-50">
+                                            0.79 kg
+                                        </span>
+                                    </li>
+
+                                    <li class="flex-w flex-t mb-1 mt-1 ml-2 row">
+                                        <span class="w-25">
+                                            Dimensions:
+                                        </span>
+
+                                        <span class="w-50">
+                                            110 x 33 x 100 cm
+                                        </span>
+                                    </li>
+
+                                    <li class="flex-w flex-t mb-1 mt-1 ml-2 row">
+                                        <span class="w-25">
+                                            Materials:
+                                        </span>
+
+                                        <span class="w-50">
+                                            60% cotton
+                                        </span>
+                                    </li>
+
+                                    <li class="flex-w flex-t mb-1 mt-1 ml-2 row">
+                                        <span class="w-25">
+                                            Color:
+                                        </span>
+
+                                        <span class="w-50">
+                                            Black, Blue, Grey, Green, Red, White
+                                        </span>
+                                    </li>
+
+                                    <li class="flex-w flex-t mb-1 mt-1 ml-2 row">
+                                        <span class="w-25">
+                                            Size:
+                                        </span>
+
+                                        <span class="w-50">
+                                            XL, L, M, S
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews -->
+                    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-expanded="false">
+                        <div class="row">
+                            <div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
+                                <div class="p-b-30 m-lr-15-sm">
+                                    <!-- Review -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!--  Footer  -->
     <footer class="page-footer font-small pt-4">
@@ -216,7 +305,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">MEDUSA</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor diam tellus, non accumsan
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor diam tellus, non
+                        accumsan
                         mi finibus in. Curabitur feugiat consequat nisi rutrum tempor.</p>
                 </div>
                 <!-- Grid column -->

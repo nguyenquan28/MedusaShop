@@ -16,9 +16,10 @@ ul li:hover {
     list-style-type: none;
 }
 
-.small-image ul li img:hover{
+.small-image ul li img:hover {
     border: 1px solid grey;
 }
+
 .small-image img {
     display: flex;
     width: 80px;
@@ -101,10 +102,10 @@ ul li:hover {
 }
 
 /* infomation product */
-.tab-detal{
+
+.tab-detal {
     display: block;
     border: 1px solid grey !important;
-
 }
 
 .tab-detal ul {
@@ -112,10 +113,18 @@ ul li:hover {
 }
 
 .tab-detal ul li:hover {
-    color: #333;
-    border-bottom: 1px solid #797979;
+    color: #333 !important;
+    /* border-bottom: 1px solid #797979 !important; */
 }
 
-.text-pane{
+.text-pane {
     color: grey;
+}
+
+.how-pos2 {
+    padding: 2% 11% 2% 11%;
+}
+
+.nav-item {
+    margin-bottom: 0px solid while !important;
 }
