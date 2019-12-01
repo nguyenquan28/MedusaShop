@@ -9,11 +9,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -26,15 +21,10 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-    <!-- Modal carts -->
-    <script>
-        window.console = window.console || function (t) { };
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 
 <body>
@@ -172,7 +162,7 @@
 
 
         <!--Navbar menu-->
-        <nav class="navbar navbar-expand-lg navbar-dark lighten-5 mb-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
             <a class="ml-3" href="Home.html" title="home">
                 <img src="https://cdn11.bigcommerce.com/s-80j7zjtb20/images/stencil/original/new_medusa_logo23-02-1_1536271402__37042.original.png"
@@ -180,6 +170,7 @@
             </a>
 
             <!-- Collapse button -->
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                 aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -223,7 +214,7 @@
                     </li>
                     <li class="nav-item" data-toggle="modal" data-target="#ModalLogin">
                         <a class="nav-link waves-effect waves-light">
-                            <i class="fas fa-sign-in-alt"></i>
+                            <i class="fas fa-heart"></i>
                         </a>
                     </li>
                 </ul>
@@ -235,7 +226,7 @@
     </header>
 
     <!--  Slide Show  -->
-    <div class="slideshow">
+    <!-- <div class="slideshow">
         <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -273,10 +264,90 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
+    </div> -->
+
+    <!-- Promotion -->
+    <div class="container d-flex flex-row mt-2 mb-5">
+        <!-- Carousel -->
+        <div class="carousel-content col-lg-8">
+
+
+            <div class="tab-content banner-right-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <img src="images/baner1.png" alt=""></div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <img src="images/baner2.png" alt="">
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <img src="images/baner3.png" alt="">
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg banner-navs" id="tab-banner">
+                <ul class="nav" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true">Image 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                            aria-controls="pills-profile" aria-selected="false">Image 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">Image 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+            <!-- <div class="owl-carousel">
+                <div><img src="images/baner1.png" alt=""></div>
+                <div><img src="images/baner2.png" alt=""></div>
+                <div><img src="images/baner3.png" alt=""></div>
+                <div><img src="images/baner1.png" alt=""></div>
+            </div> -->
+        </div>
+
+        <div class="banner-right-content col-lg-4 pd-0">
+            <div class="banner-right-content_image  mb-3">
+                <img src="images/banner-mini.png" alt="">
+            </div>
+            <div class="banner-right-content_image ">
+                <img src="images/banner-mini2.png" alt="">
+            </div>
+        </div>
+
     </div>
 
     <!--  Container  -->
     <div class="container">
+
+        <!--  ctn  -->
+        <div class="body-ctn">
+            <div class="title-cnt pb-2">
+                <h1>PRODUCT OVERVIEW</h1>
+            </div>
+            <div class="filter-cnt d-flex mb-3">
+                <div class="shop_menu mr-auto p-2" id="myBtnShop_Menu">
+                    <button class="btn_shopmenu active mr-auto p-2">All Product</button>
+                    <button class="btn_shopmenu mr-auto p-2">Women</button>
+                    <button class="btn_shopmenu mr-auto p-2">Men</button>
+                    <button class="btn_shopmenu mr-auto p-2">Shoes</button>
+                    <button class="btn_shopmenu mr-auto p-2">Clock</button>
+                </div>
+                <div class="filter-btn p-2 bd-highlight">
+                    <button class="btn btn-outline-light">Filter</button>
+                </div>
+                <div class="filter-btn p-2 bd-highlight">
+                    <button class="btn btn-outline-light">Search</button>
+                </div>
+            </div>
+        </div>
+
+
         <!--  content ctn -->
         <div class="d-flex justify-content-center">
             <div class="text-center common">
@@ -306,28 +377,6 @@
                 </span>
                 <h6 class="title-trust">Secure Payment</h6>
                 <p class="font-small">Multiple safe payment methods</p>
-            </div>
-        </div>
-
-        <!--  ctn  -->
-        <div class="body-ctn">
-            <div class="title-cnt pb-2">
-                <h1>PRODUCT OVERVIEW</h1>
-            </div>
-            <div class="filter-cnt d-flex mb-3">
-                <div class="shop_menu mr-auto p-2" id="myBtnShop_Menu">
-                    <button class="btn_shopmenu active mr-auto p-2">All Product</button>
-                    <button class="btn_shopmenu mr-auto p-2">Women</button>
-                    <button class="btn_shopmenu mr-auto p-2">Men</button>
-                    <button class="btn_shopmenu mr-auto p-2">Shoes</button>
-                    <button class="btn_shopmenu mr-auto p-2">Clock</button>
-                </div>
-                <div class="filter-btn p-2 bd-highlight">
-                    <button class="btn btn-outline-light">Filter</button>
-                </div>
-                <div class="filter-btn p-2 bd-highlight">
-                    <button class="btn btn-outline-light">Search</button>
-                </div>
             </div>
         </div>
 
@@ -464,21 +513,16 @@
     <!-- ------------------------------------ Footer ------------------------------------ -->
 
     <!-- ------------------------------------ JS JQuery ------------------------------------ -->
-    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script type="text/javascript" src="js/main.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
