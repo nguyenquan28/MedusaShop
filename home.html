@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/util-css.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -25,6 +27,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 </head>
 
 <body>
@@ -331,51 +334,162 @@
 
     <!--  Container  -->
     <div class="container">
-
         <!--  ctn  -->
         <div class="body-ctn">
             <div class="title-cnt pb-2">
                 <h1>PRODUCT OVERVIEW</h1>
             </div>
-            <div class="filter-cnt d-flex mb-3">
+            <div class="filter-cnt d-flex m-b-50 row">
                 <div class="shop_menu mr-auto p-2" id="myBtnShop_Menu">
-                    <button class="btn_shopmenu active mr-auto p-2">All Product</button>
-                    <button class="btn_shopmenu mr-auto p-2">Women</button>
-                    <button class="btn_shopmenu mr-auto p-2">Men</button>
-                    <button class="btn_shopmenu mr-auto p-2">Shoes</button>
-                    <button class="btn_shopmenu mr-auto p-2">Clock</button>
+                    <button class="btn_shopmenu mr-auto p-2 active" onclick="filterSelection('all-products')">All Product</button>
+                    <button class="btn_shopmenu mr-auto p-2 " onclick="filterSelection('product-women')">Women</button>
+                    <button class="btn_shopmenu mr-auto p-2 " onclick="filterSelection('product-men')">Men</button>
+                    <button class="btn_shopmenu mr-auto p-2 " onclick="filterSelection('product-shoes')">Shoes</button>
+                    <button class="btn_shopmenu mr-auto p-2 " onclick="filterSelection('product-clock')">Clock</button>
                 </div>
-
-                <div class="d-flex justify-content-end">
-                    <div class="searchbar">
-                        <input class="search_input" type="text" name="" placeholder="Search for name">
-                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                <div class="mt-2 mb-2 d-flex flex-row">
+                    <div class="filter-btn bd-highlight pr-1">                            
+                        <button class="btn btn-outline-light btn-filter js-show-filter" >
+                                <i class="icon-filter trans-04 zmdi zmdi-filter-list"></i>
+                                <i class="icon-close-filter zmdi zmdi-close"></i>
+                            Filter
+                        </button>
+                    </div>
+                    <div class="filter-btn bd-highlight">
+                        <button class="btn btn-outline-light btn-search js-show-search">
+                            <i class="icon-search zmdi zmdi-search"></i>
+                            <i class="icon-close-search zmdi zmdi-close"></i>
+                            Search
+                        </button>
+                    </div>
+                </div> 
+                <!-- show filter -->
+                <div class="panel-filter w-full pl-1 pr-0 col-xl-12 mt-2" style="display: none;" id="show_filter">
+                        <div class="wrap-filter w-full p-t-30 p-lr-40">
+                            <div class="filter-col1">
+                                <div class="filter-col-title cl-black p-b-15">Sort By</div>
+                                <ul>
+                                    <li class="p-b-">
+                                        <a class="filter-link" href="">Default</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">Popularity</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">Average rating</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">Newness</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">Price: Low to High</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">Price: High to Low</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-col2">
+                                <div class="filter-col-title cl-black p-b-15">Price</div>
+                                <ul>
+                                    <li class="p-b-">
+                                        <a class="filter-link" href="">All</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">1$</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">2$</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">3$</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">4$</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <a class="filter-link" href="">5$</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-col3">
+                                <div class="filter-col-title cl-black p-b-15">Color</div>
+                                <ul>
+                                    <li class="p-b-6">
+                                        <span class="m-r-6 fs-15 cl-black" "><i class="fas fa-circle cl-black"></i></span>
+                                        <a class="filter-link" href="">Black</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <span class="m-r-6 fs-15 cl-black" "><i class="fas fa-circle cl-blue"></i></span>
+                                        <a class="filter-link" href="">Blue</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <span class="m-r-6 fs-15 cl-black" "><i class="fas fa-circle cl-grey"></i></span>
+                                        <a class="filter-link" href="">Grey</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <span class="m-r-6 fs-15 cl-black" "><i class="fas fa-circle cl-green"></i></span>
+                                        <a class="filter-link" href="">Green</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <span class="m-r-6 fs-15 cl-black" "><i class="fas fa-circle cl-red"></i></span>
+                                         <a class="filter-link" href="">Red</a>
+                                    </li>
+                                    <li class="p-b-6">
+                                        <span class="m-r-6 fs-15 cl-black" "><i class="fas fa-circle cl-white"></i></span>
+                                        <a class="filter-link" href="">White</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-col4">
+                                <div class="filter-col-title cl-black p-b-15">Tags</div>
+                                <div class="">
+                                    <a href="" class="bor7 fs-13 p-lr-15 cl-grey fl-l m-r-5 m-b-5 p-tb-5 hv-bor7 trans-04">Fashion</a>
+                                    <a href="" class="bor7 fs-13 p-lr-15 cl-grey fl-l m-r-5 m-b-5 p-tb-5 hv-bor7 trans-04">Lifestyle</a>
+                                    <a href="" class="bor7 fs-13 p-lr-15 cl-grey fl-l m-r-5 m-b-5 p-tb-5 hv-bor7 trans-04">Denim</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+                <div class="w-full panel-search pl-1 pr-0 col-xl-12 mt-2" style="display: none;">
+                    <div class="cnt-wrap-search w-full d-flex flex-row">
+                        <button class="btn-ctn-search">
+                            <i class="icon-search zmdi zmdi-search"></i>
+                        </button>
+                        <input class="input-ctn-search" type="text" name="search-product" placeholder="Search">
+        
                     </div>
                 </div>
-                
+            </div>
+            
+            
+            <!------------------------------------ card products ------------------------------------------->
+            <div class="products-home" id="products_home">
+                <div class="card_item product-shoes col-sm-6 col-md-4 col-lg-3">
+                    <div class="card_block">
+                        <div class="block_img">
+                            <img src="images/product-01.jpg" id="shop_img">
+                            <button id="edit" class="block_btn">Add to Carts</button>
+                        </div> 
+                        <div class="card-block-txt d-flex justify-content-between">
+                            <div class="block-txt-child1 d-flex flex-column" >
+                                <a href="product-detail.html"  class="txt_a hov_txt" id="shop_name">Classic Trench Coat</a>
+                                <span class="txt_price" id="shop_price">100000</span>
+                            </div>
+                            <div class="block-txt-child2 flex-row-reverse">
+                                <a href="#" class="child2-btn-addwish">
+                                    <i class="far fa-heart icon-heart1"></i>
+                                    <i class="fas fa-heart icon-heart2"></i>
+                                </a>
+                            </div>
+                        </div>
+                          
+                    </div>
+                </div>
             </div>
         </div>
-
-        <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                Link with href
-            </a>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                aria-expanded="false" aria-controls="collapseExample">
-                Button with data-target
-            </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident.
-            </div>
-        </div>
-
-        <!--  content ctn -->
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center fl-l w-full">
             <div class="text-center common">
                 <span class="trust-icon-item d-inline-block">
                     <img src="images/icons/bag.png" alt="">
@@ -405,12 +519,10 @@
                 <p class="font-small">Multiple safe payment methods</p>
             </div>
         </div>
-
     </div>
 
-
     <!--  Footer  -->
-    <footer class="page-footer font-small pt-4">
+    <footer class="page-footer font-small pt-4 fl-l w-full">
 
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
@@ -560,6 +672,16 @@
 
     <script>
         AOS.init();
+        filterSelection("all-products")
+        var btnContainer = document.getElementById("myBtnShop_Menu");
+        var btns = btnContainer.getElementsByClassName("btn_shopmenu");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[2].className = current[2].className.replace(" active","");
+            this.className += " active";
+        });
+        }
     </script>
 </body>
 

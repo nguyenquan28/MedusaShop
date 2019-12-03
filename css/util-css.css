@@ -1,0 +1,113 @@
+
+
+.fl-l{
+    float: left;
+}
+.w-full{
+    width: 100%;
+}
+
+
+.fs-15{
+    font-size: 15px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.bor7{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.hv-bor7:hover{
+    text-decoration: none;
+    color: blue;
+    border-color: blue;
+}
+.h-20{
+    min-height: 5px;
+}
+/* color */
+.cl-black{
+    color: black;
+}
+.cl-red{
+    color: red;
+}
+.cl-blue{
+    color: blue;
+}
+.cl-grey{
+    color: grey;
+}
+.cl-green{
+    color: green;
+}
+.cl-white{
+    color: white;
+}
+
+
+/* margin */
+.m-b-50{
+    margin-bottom: 50px;
+}
+.m-b-5{
+    margin-bottom: 5px;
+}
+.m-r-6{
+    margin-right: 6px;
+}
+.m-r-5{
+    margin-right: 5px;
+}
+/* padding */
+.p-b-30{
+    padding-bottom: 30px;
+}
+.p-b-15{
+    padding-bottom: 15px;
+}
+.p-b-6{
+    padding-bottom: 6px;
+}
+
+.p-t-30{
+    padding-top: 30px;
+}
+
+.p-lr-40{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.p-lr-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.p-tb-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* transition */
+.trans-04{
+    transition: all 0.4s;
+}
+ul,li{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.dis-none{
+    display: none;
+}
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+input, textarea, label {
+    display: block;
+    outline: none;
+    border: none;
+}
