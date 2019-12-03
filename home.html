@@ -170,7 +170,7 @@
             </a>
 
             <!-- Collapse button -->
-            
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                 aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -201,8 +201,11 @@
 
                 <form class="form-outline col-md-4">
                     <div class="md-form my-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search for Name"
-                            aria-label="Search">
+                        <div><input class="form-control mr-sm-2 d-flex flex-row" type="text"
+                                placeholder="Search for Name" aria-label="Search"></div>
+                        <div class="search_btn d-flex flex-row">
+                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
                     </div>
                 </form>
 
@@ -322,6 +325,10 @@
 
     </div>
 
+
+
+
+
     <!--  Container  -->
     <div class="container">
 
@@ -338,15 +345,34 @@
                     <button class="btn_shopmenu mr-auto p-2">Shoes</button>
                     <button class="btn_shopmenu mr-auto p-2">Clock</button>
                 </div>
-                <div class="filter-btn p-2 bd-highlight">
-                    <button class="btn btn-outline-light">Filter</button>
+
+                <div class="d-flex justify-content-end">
+                    <div class="searchbar">
+                        <input class="search_input" type="text" name="" placeholder="Search for name">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
                 </div>
-                <div class="filter-btn p-2 bd-highlight">
-                    <button class="btn btn-outline-light">Search</button>
-                </div>
+                
             </div>
         </div>
 
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Button with data-target
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident.
+            </div>
+        </div>
 
         <!--  content ctn -->
         <div class="d-flex justify-content-center">
@@ -511,6 +537,12 @@
         <!-- Footer Links -->
     </footer>
     <!-- ------------------------------------ Footer ------------------------------------ -->
+
+
+    <!-- Search ở đây nè !!! -->
+    <div class="container">
+
+    </div>
 
     <!-- ------------------------------------ JS JQuery ------------------------------------ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
